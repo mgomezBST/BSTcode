@@ -1,0 +1,386 @@
+body {
+    margin: 0;
+    font-family: Poppins, sans-serif;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0);
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    height: 70px;
+    width: 100%;
+    transition: background-color 0.5s ease;
+    z-index: 2;
+}
+
+nav.scrolled {
+    background-color: rgba(255, 255, 255, 1);
+    color: #129389;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+nav.scrolled .nav-link {
+    color: #129389;
+}
+nav:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.logo {
+    height: 50px;
+    width: auto;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-link {
+    margin-right: 33px;
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: Raleway, sans-serif;
+}
+
+.nav-link:hover {
+    color: #129389;
+    transition: 0.3s;
+}
+
+.section-container {
+    position: relative;
+    height: 100vh;
+    background-image: url('../assets/fondoHome.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.text-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+#contenedorPadre {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    position: relative;
+  }
+  #contenedorHijo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000;
+    font-size: 16px;
+    font-weight: normal;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5%;
+    width: 80%;
+    border-radius: 12px;
+    display: flex;
+    padding: 33px;
+  }
+
+  .drross {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    margin: 10%;
+    margin-top: 20%;
+    padding: 2%;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.image-container {
+    margin-right: 20px;
+}
+
+img {
+    width: auto;
+    height: 200px;
+    border-radius: 8px;
+    margin-top: 45px;
+}
+
+.ddrtext {
+    max-width: 350px;
+    margin: 3%;
+}
+
+p {
+    font-size: 16px;
+    color: #333;
+}
+
+.reviews {
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.card {
+    text-align: center;
+    max-width: 300px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h6 {
+    margin-top: 0;
+}
+
+.imgcard {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.pcard {
+    font-size: 14px;
+    color: #000;
+    text-align: left;
+}
+
+
+.accordion-container {
+    display: flex;
+}
+
+.accordion-buttons {
+    width: 30%;
+    padding: 30px;
+}
+
+.accordion-button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: left;
+    cursor: pointer;
+    border: none;
+    border: 1px solid #777;
+    font-family: Raleway, sans-serif;
+    border-radius: 5px;
+}
+
+.accordion-content {
+    width: 70%;
+    padding: 20px;
+}
+
+.faq-content {
+    display: none;
+}
+
+.faq-content.active {
+    display: block;
+}
+
+.contact {
+    justify-content: center;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    text-align: left;
+}
+
+input,
+textarea {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin-bottom: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    background-color: #129389;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 12px;
+    width: 20%;
+    font-family: Raleway, sans-serif;
+}
+
+input[type="submit"]:hover {
+    background-color: #0f6b75;
+}
+footer {
+    background-color: #129389;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    width: auto;
+    margin-top: auto; /* Hace que el pie de página se quede pegado en la parte inferior */
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 7%;
+    margin-top: 7%;
+}
+
+.grid-item img {
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+}
+
+.grid-item h5 {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.member-section-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    height: 70vh;
+    background-image: url('../assets/fondoHome.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+}
+
+.member-text-container {
+    flex: 1;
+    max-width: 600px;
+}
+
+.member-text-container h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.member-text-container h5 {
+    font-size: 18px;
+    color: #fff;
+}
+
+.memberp {
+    color: #000;
+    text-align: left;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: Poppins;
+    font-size: 18px;
+}
+
+/* Estilos para pantallas más grandes (tabletas y computadoras) */
+/* Estilos para pantallas más grandes (tabletas y computadoras) */
+@media screen and (min-width: 768px) {
+    .member-section-container {
+        height: 40vh;
+        flex-direction: row; /* Volver a la disposición de fila para pantallas más grandes */
+    }
+
+    .member-text-container {
+        max-width: 600px;
+        text-align: left; /* Alinear el texto a la izquierda para pantallas más grandes */
+    }
+
+    .memberp {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 5%; /* Ajusta el margen izquierdo para reducir el espacio */
+        margin-right: 5%; /* Ajusta el margen derecho para reducir el espacio */
+        font-size: 16px;
+    }
+
+    .member-text-container h1 {
+        margin-top: 5%; /* Ajusta el margen superior para reducir el espacio */
+        font-size: 36px; /* Restaura el tamaño de fuente original */
+        margin-bottom: 5px; /* Reducir el espacio inferior del h1 */
+    }
+}
+
+/* Estilos para pantallas más pequeñas (tabletas y teléfonos móviles) */
+@media screen and (max-width: 991px) {
+    .member-section-container {
+        height: 40vh;
+        flex-direction: column; /* Cambio a disposición de columna para pantallas más pequeñas */
+        align-items: center; /* Centrar elementos en pantallas más pequeñas */
+    }
+
+    .member-text-container {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .member-text-container h1 {
+        margin-top: 5%; /* Ajusta el margen superior para reducir el espacio */
+        font-size: 24px; /* Restaura el tamaño de fuente original */
+        margin-bottom: 5px; /* Reducir el espacio inferior del h1 */
+    }
+
+    .member-text-container h5 {
+        font-size: 14px;
+        margin-bottom: 10px; /* Reducir el espacio inferior del h5 */
+    }
+
+    .memberp {
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        margin-right: 5%;
+        font-size: 16px;
+    }
+}
